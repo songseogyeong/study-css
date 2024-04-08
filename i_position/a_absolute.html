@@ -1,0 +1,42 @@
+<!-- 
+    absolute
+        무조건 해당 위치로 이동한다.
+        브라우저를 기준으로 삼으며, 만약 top:0을 작성하면 가장 위에 붙는다.
+        다른 요소랑 겹치든 말든 아무 신경을 안쓰고 해당 위치에 놓인다.
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- absolute: 다른요소의 영향을 안 받음(독립적), 내가 원하는 위치에 정확하게 들어가게 한다 -->
+    <title>position - absolute</title>
+    <style>
+        #element1 {
+            z-index: 1;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            /* 퍼센트는 화면의 상대비율에 맞춰서 출력된다 */
+            left: 30%;
+            background-color: red;
+        }
+
+        #element2 {
+            /* z-index가 더 큰 값이 앞으로 온다 */
+            z-index: 2;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            /* 퍼센트는 화면의 상대비율에 맞춰서 출력된다 */
+            left: 30%;
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div id="element1"></div>
+    <div id="element2"></div>
+</body>
+</html>

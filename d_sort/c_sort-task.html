@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인라인 수직 정렬</title>
+    <style>
+        .content-wrap {
+            /* 여백의 기본 값이 있는데, 여백을 없애고 싶으면 0으로 주면 된다 */
+            margin: 0;
+            width: 300px;
+            height: 300px;
+            border: 0.5px solid gray;
+            text-align: center;
+            line-height: 300px;
+        }
+        /* "내용"을 p.content-wrap 기준으로 수평 및 수직 정렬 */
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <p class="content-wrap">
+                <strong>내용</strong>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

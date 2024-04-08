@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인라인 수평 정렬</title>
+    <!-- "내용"을 가운데 배치 -->
+    <style>
+        /* id가 horizon */
+        #horizon {
+            width: 300px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        #warp {
+            line-height: 300px;
+        }
+
+        /* /* div 안에 div가 있으면 공백을 쓰면 되는데,
+        div가 많을 수도 있기 때문에 정확하게 어디까진지 지정하고 싶으면 공백 대신 >를 붙인다. */
+        /* div>div {
+            text-align: center;
+        } */
+
+        /* body > div {
+            text-align: center;
+        } */
+
+        /* .content {
+            text-align: center;
+        } */
+        .wrap {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="horizon">
+        <div id="warp">
+            내용
+        </div>
+    </div>
+</body>
+</html>

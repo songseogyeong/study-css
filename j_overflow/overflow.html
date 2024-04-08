@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- overflow > 넘치다. 넘쳤을 때 어떻게 할 건지 설정 -->
+    <title>overflow</title>
+    <style>
+        #image-wrap {
+            width: 200px;
+            height: 200px;
+            /* 넘치면 scroll로 표기 */
+            overflow: scroll;
+            /* 넘친 부분은 숨기기 */
+            overflow: hidden;
+        }
+
+        #text-wrap {
+            width: 200px;
+            height: 60px;
+            overflow: hidden;
+            /* 넘치는 건 없애는데 만약 넘치는게 텍스트면, clip으로 처리, clip은 히든처럼 잘라줌*/
+            /* text-overflow: clip; */
+            /* ellipsis: 넘치는 글씨를 ...으로 표현해줌 */
+            text-overflow: ellipsis;
+            /* white-space: 줄바꿈, nowrap으로 두면 한 줄로 나옴 */
+            white-space: nowrap;
+        }
+
+        #text-wrap span {
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="image-warp">
+        <img src=".\image\check2.png" alt="">
+    </div>
+
+    <div id="text-wrap">
+        <span>안녕하세요, 반갑습니다. 저는 css가 좋아요. 여러분도 그렇죠?</span>
+    </div>
+</body>
+</html>

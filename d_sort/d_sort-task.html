@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인라인 수직 정렬</title>
+    <style>
+        /* "내용"을 p.content-wrap 기준으로 수평 및 수직 정렬 */
+        .content-wrap {
+            /* 위 오른쪽 아래 왼쪽 */
+            /* margin: 50px auto 0 auto; */
+            margin: 0;
+            width: 300px;
+            height: 300px;
+            border: 0.5px solid gray;
+            text-align: center;
+            line-height: 300px;
+        }
+
+        /* "내용"을 감싸고 있는 p 태그를 가운데(수평)으로 배치 */
+        .content-div {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 0.5px dotted hotpink;
+            width: 600px;
+            height: 400px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <div class="content-div">
+            <p class="content-wrap">
+                <strong>내용</strong>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

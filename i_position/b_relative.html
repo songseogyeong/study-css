@@ -1,0 +1,62 @@
+<!-- 
+    relative
+        테두리를 만들어 준다. 기본적으로 다른 요소의 영역을 침범하지 않는다.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position - relative</title>
+    <style>
+        #elemet1, #elemet2 {
+            width: 200px;
+            height: 100px;
+            position: relative;
+            top: 0;
+        }
+
+        #elemet1 {
+            background-color: orange;
+        }
+
+        #elemet2 {
+            background-color: brown;
+        }
+        
+        div div.in1, div div.int2 {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            right: 50%;
+            top: 50%;
+            transform: translate(50%, -50%);
+            /* translate: 본인을 기준으로 이동시키는 것 */
+            /* 지금 width가 50px니까 calc(50%)는 25%가 된다 */
+            /* translate: calc(50%) */
+            /* x = width, y=height */
+            /* x축을 50%만큼 올리라는 뜻 */
+            /* transform: translateX(50%) */
+        }
+
+        div div.in1 {
+            z-index: 1;
+            background-color: red;
+        }
+
+        div div.in2 {
+            background-color: violet;
+        }
+    </style>
+</head>
+<body>
+    <div id="elemet1">
+        <div class="in1"></div>
+        <div class="in2"></div>
+    </div>
+    <div id="elemet2">
+        <div class="in"></div>
+    </div>
+</body>
+</html>

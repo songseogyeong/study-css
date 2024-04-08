@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일 상속</title>
+    <!-- 전체 선택자 대신 바디를 쓰는 이유는
+    *을 쓰면 하나하나 검색해서 적용하기 때문에 body를 쓰는게 더 성능이 좋다 -->
+    <style>
+        body {color: green;
+        }
+    
+    /* inherit은 부모의 것을 그대로 받는다 */
+    div.inherit-test {
+        color: red;
+        border: 3px dashed #30f;
+        padding: 30px;
+    }
+
+    h1 {
+        padding: inherit;
+    }
+
+    p {
+        border: inherit;
+    }
+
+    /* 버튼은 버튼에 있는 색상이 우선순위가 더 높기 때문에 적용되지 않는다 */
+    button {
+        color:inherit;
+    }
+    </style>
+</head>
+<body>
+    <div class="inherit-test">
+        DIV
+        <h1>Heading</h1>
+        <p>
+            Paragraph <strong>strong</strong>
+        </p>
+        <button>Button</button>
+    </div>
+</body>
+</html>

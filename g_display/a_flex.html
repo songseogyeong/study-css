@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display - flex</title>
+    <style>
+        /* display와 float은 둘 중 하나만 작성해야 한다! */
+        .wrap {
+            /* 자식들을 모두 붙여서 나오게 한다 */
+            display: flex;
+        }
+        
+        .wrap div {
+            /* 줄을 줄일 때 칸이 부족한 건 아래로 내려가게 함 */
+            /* left는 왼쪽 방향부터 붙여서 나오게 한다 */
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <!-- div#container>div.wrap*3>div*4
+    작성 후 ctrl + space 누르면 미리보기 -->
+    <div id="container">
+        <div class="wrap">
+            <div>1열</div>
+            <div>2열</div>
+            <div>3열</div>
+            <div>4열</div>
+        </div>
+        <div class="wrap">
+            <div>1열</div>
+            <div>2열</div>
+            <div>3열</div>
+            <div>4열</div>
+        </div>
+        <div class="wrap">
+            <div>1열</div>
+            <div>2열</div>
+            <div>3열</div>
+            <div>4열</div>
+        </div>
+    </div>
+</body>
+</html>

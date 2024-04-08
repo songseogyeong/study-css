@@ -1,0 +1,5 @@
+/* css 파일에는 바로 작성해도 된다 */
+div.apple {
+    color: pink;
+    font-size: 12px;
+}

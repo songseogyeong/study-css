@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>바깥 여백</title>
+    <style>
+        #div1 {
+            /* margin-top: 30px;
+            margin-right: 30px;
+            margin-bottom: 30px;
+            margin-left: 30px; */
+            margin: 30px;
+            border: 1px solid black;
+        }
+
+        /* 위 요소의 아래 margin과 아래 요소의 위 margin은 겹친다 */
+        #div2 {
+            margin-top: 60px;
+            margin-bottom: 30px;
+            border: 1px solid #e10;
+        }
+
+        #div3 {
+            /* margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 30px;
+            margin-right: 30px; */
+            /* margin: 상하 좌우 */
+            margin: 20px 30px;
+            border: 1px solid hotpkin;
+        }
+
+        #div4 {
+            /* margin: 위 오른쪽 아래 왼쪽 */
+            margin: 0 10px 20px 30px
+        }
+
+        #div5 {
+            /* margin: 위 좌우 아래 */
+            margin: 0 50px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <!-- 전체 선택 커서 누르고 alt + shfit +드레기 -->
+        <div id="div1">안녕하세요 DIV1입니다.</div>
+        <div id="div2">안녕하세요 DIV2입니다.</div>
+        <div id="div3">안녕하세요 DIV3입니다.</div>
+        <div id="div4">안녕하세요 DIV4입니다.</div>
+        <div id="div5">안녕하세요 DIV5입니다.</div>
+    </div>
+</body>
+</html>
+
+<!-- 패딩과 마진은 똑같다. 단, 오토기능이 없다. -->

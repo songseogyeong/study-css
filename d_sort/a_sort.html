@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정렬</title>
+    <style>
+        #horizon {
+            /* 300px 크기인 div 안에 */
+            width: 300px;
+            /* 중앙으로 정렬한다 */
+            text-align: center;
+            /* div를 중앙으로 맞추기
+            왼쪽 오른쪽 여백이 자동으로 맞춰진다*/
+            margin: 0 auto;
+        }
+
+        /* 500*300 안에 */
+        #wrap {
+            width: 500px;
+            height: 300px;
+            border: 1px solid gray;
+            /* flex라는 걸 쓰면 다양한 서식을 사용할 수 있음 */
+            display: flex;
+            /* 안에 있는 자식을 센터 정렬로 바꾼다 */
+            justify-content: center;
+            /* line-height는 안에 있는 블록을 수직정렬함. 감싸고 있는애 height와 똑같이 줘야 가운데로 감*/
+            line-height: 300;
+            align-items: center;
+        }
+
+        /* 100*100블럭이 있음 */
+        #article, container {
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            /* margin:감싸져 있는 테두리로 양쪽 여백이 같아진다 */
+            /* margin: 0 auto; */
+        }
+    </style>
+</head>
+<body>
+    <div id="horizon">수평 정렬</div>
+    <div id="warp">
+        <div id="container"></div>
+        <div id="article"></div>
+    </div>
+</body>
+</html>

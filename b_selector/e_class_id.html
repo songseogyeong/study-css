@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>클래스와 아이디 속성</title>
+    <style>
+        /* class명보다 id가 더 구체적이다 */
+        #a {
+            color: coral;
+        }
+        
+        /* class 명이 다수로 설정되었을 때 우열을 가릴 수 없기 때문에 마지막으로 작성된 스타일로 적용된다. */
+        /* class 앞에 태그를 표기해주면 더 구체적으로 더 구체적인 것으로 실행된다. */
+        span.x{
+            color:blueviolet;
+        }
+
+        .x {
+            color: blueviolet;
+        }
+
+        .y {
+            color: magenta;
+        }
+
+        .z {
+            color: maroon;
+        }
+    </style>
+</head>
+<body>
+    <span>클래스와 아이디 속성</span>
+    <!-- class에는 여러개의 클래스 명을 설정(공백으로 구분)할 수 있지만, id는 불가능하다 -->
+    <span id="a" class="x y z">
+        아이디는 단 한개의 값만 작성할 수 있고,
+        클래스는 여러 개의 값을 작성할 수 있다.
+    </span>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        #flex-wrap {
+            display: flex;
+            width: 1260px;
+            height: 305px;
+            margin: 0 auto;
+        }
+
+        #flex-wrap div {
+            width: 420px;
+            height: 100%;
+        }
+
+        #flex-wrap div img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #float-wrap {
+            width: 80%;
+            height: 305px;
+            margin: 0 auto;
+        }
+
+        #float-wrap div {
+            float: left;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <div id="flex-wrap">
+            <div><img src=".\image\img1.jpg" alt=""></div>
+            <div><img src=".\image\img2.jpg" alt=""></div>
+            <div><img src=".\image\img3.jpg" alt=""></div>
+        </div>
+        <div class="wrap2">
+            <div><img src=".\image\img1.jpg" alt=""></div>
+            <div><img src=".\image\img2.jpg" alt=""></div>
+            <div><img src=".\image\img3.jpg" alt=""></div>
+        </div>
+    </div>
+</body>
+</html>

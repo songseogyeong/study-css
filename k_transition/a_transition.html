@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        div:nth-child(1) {
+            width: 50px;
+            height: 50px;
+            background-color: brown;
+            /* 0.5초에 걸쳐서 바뀌게 한다 */
+            transition: background-color 0.5s;
+        }
+
+        /* hover는 마우스를 가져다 대면 바뀌게 해준다 */
+        div:nth-child(1):hover {
+            background-color: bisque;
+        }
+
+        div:nth-child(2) {
+            width: 50px;
+            height: 50px;
+            background-color: brown;
+            transition: all 1s 1s;
+            /* transition-property: background-color, opacity, width, transform;
+            transition-delay: 0s, 1s, 0s, 2s;
+            transition-duration: 1s, 1s, 2s, 1s; */
+        }
+
+        /* hover는 마우스를 가져다 대면 바뀌게 해준다 */
+        div:nth-child(2):hover {
+            width: 100px;
+            background-color: bisque;
+            opacity: 50%;
+            transform: translateX(20px);
+        }
+
+        div:nth-child(3) {
+            width: 100px;
+            height: 100px;
+            background-image: url("cancel.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            transition: all 2s;
+        }
+
+        div:nth-child(3):hover {
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

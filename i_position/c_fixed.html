@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fixed - position</title>
+    <style>
+        #fixed {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- href에는 사이트 경로를 써야 하는데, 내가 이동시키고 싶은 부분을 적용할 수 있다 -->
+    <a href="#title5">북마크1</a>
+    <a href="#p-12">북마크2</a>
+
+    <h2 id="top">제목1</h2>
+   <p>1번째 단락</p>
+   <h2>제목2</h2>
+   <p>2번째 단락</p>
+   <h2>제목3</h2>
+   <p>3번째 단락</p>
+   <h2>제목4</h2>
+   <p>4번째 단락</p>
+   <h2 id="title5">제목5</h2>
+   <p><a>5번째 단락</a></p>
+   <h2>제목6</h2>
+   <p>6번째 단락</p>
+   <h2>제목7</h2>
+   <p>7번째 단락</p>
+   <h2>제목8</h2>
+   <p>8번째 단락</p>
+   <h2>제목9</h2>
+   <p>9번째 단락</p>
+   <h2>제목10</h2>
+   <p>10번째 단락</p>
+   <h2>제목11</h2>
+   <p>11번째 단락</p>
+   <h2>제목12</h2>   
+   <p id="p-12">12번째 단락</p>
+   <h2>제목13</h2>
+   <p>13번째 단락</p>
+   <h2>제목14</h2>
+   <p>14번째 단락</p>
+   <h2>제목15</h2>
+   <p>15번째 단락</p>
+    <div id="fixed">
+        <a id="a-top" href="#top"><span>맨 위로</span></a>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    $("a#a-top").click(function(e){
+        e.preventDefault();
+        $("html, body").animate({scrollTop:0}, 1000);
+    })
+</script>
+</html>
